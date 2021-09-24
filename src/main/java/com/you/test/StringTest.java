@@ -23,7 +23,7 @@ public class StringTest {
         Long con = nums.stream().filter(num -> num != null).count();
         List<Integer> nummm = nums.stream().filter(num -> num != null).distinct().collect(Collectors.toList());
         IntStream list = nums.stream().filter(num -> num != null).distinct().mapToInt(num -> num * 2);
-        //list.forEach(System.out::println);
+        list.forEach(System.out::println);
         str.stream().mapToInt(strr -> strr.length()).forEach(System.out::println);
         System.out.println("过滤之后的list集合 = "+ numm);
         System.out.println("过滤之后的list元素个数 = "+ con);
